@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 3 - Building Doctor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: { 600: '#ea580c' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black min-h-screen flex flex-col">
+
+    <nav class="bg-white text-black shadow-lg sticky top-0 z-50 border-b border-orange-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <span class="font-bold text-2xl tracking-tight text-black">Building <span
+                            class="text-orange-600">Doctor</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html"
+                            class="text-black hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
+                        <span class="bg-orange-600 text-white px-3 py-2 rounded-md text-sm font-medium">Tutorial
+                            3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+        <a href="index.html"
+            class="inline-flex items-center text-orange-600 hover:text-black mb-8 transition font-medium">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18">
+                </path>
+            </svg>
+            Back to Tutorials
+        </a>
+
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-orange-100">
+            <div class="aspect-w-16 aspect-h-9 bg-orange-50 relative border-b-2 border-orange-600">
+                <video class="w-full h-full object-contain max-h-[70vh]" controls>
+                    <source src="videos/vid3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="p-8 md:p-12">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between">
+                    <div class="md:w-2/3">
+                        <h1 class="text-3xl font-bold text-black mb-4">Advanced Waterproofing</h1>
+                        <p class="text-black text-lg leading-relaxed mb-6">
+                            Water is the enemy of any building. In this session, we demonstrate advanced waterproofing
+                            techniques.
+                            From basement sealing to roof coatings, learn the best practices and products to keep your
+                            building dry and durable.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-8 md:mt-0 md:ml-12 md:w-1/3 bg-white rounded-xl p-6 border-2 border-orange-100 hover:border-orange-600 transition-colors">
+                        <h3 class="text-lg font-semibold text-black mb-2">Resources</h3>
+                        <p class="text-sm text-black mb-6">Download the accompanying guide for this tutorial.</p>
+                        <a href="downloads/tutorial3.pdf" download
+                            class="flex items-center justify-center w-full px-4 py-3 bg-orange-600 text-white rounded-lg font-medium hover:bg-white hover:text-orange-600 hover:border-orange-600 border border-transparent transition shadow-sm hover:shadow-md">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                            Download PDF Guide
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white text-black py-8 border-t border-orange-600 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-black text-sm">
+            &copy; 2026 Building Doctor. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
